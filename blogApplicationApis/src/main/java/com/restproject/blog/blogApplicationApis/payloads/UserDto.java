@@ -9,7 +9,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class UserDto {
-    private int id;
+    private Integer id;
     @NotEmpty(message = "name: Field cannot be empty")
     private String name;
     @Email(message = "Email is invalid")

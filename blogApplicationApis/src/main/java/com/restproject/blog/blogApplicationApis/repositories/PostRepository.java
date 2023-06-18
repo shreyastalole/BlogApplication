@@ -7,6 +7,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
-public interface CategoryRepository extends JpaRepository<Category, Integer> {
-
+public interface PostRepository extends JpaRepository<Post,Integer> {
+    List<Post> findAllByCategory(Category category);
+    List<Post> findAllByUser(User user);
 }
